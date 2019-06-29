@@ -18,7 +18,7 @@ OBJFILES = 	src/blockfs.o 		\
 
 
 $(EXEC) : $(OBJFILES)
-	$(CC) -Wall $(FUSE_LIBFLAGS) -o $(EXEC) $(OBJFILES)
+	$(CC) -Wall -o $(EXEC) $(OBJFILES)  $(FUSE_LIBFLAGS) 
 
 src/blockfs.o : include/blockfs.h
 
